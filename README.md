@@ -1,4 +1,4 @@
-#Sinatra number guessing game
+# Sinatra number guessing game
 
-##Description
+## Description
 This is a number guessing game written in ruby and Sinatra DSL.
