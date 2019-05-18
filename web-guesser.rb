@@ -24,7 +24,7 @@ def get_message(guess, num)
     when guess < num && num - guess <= 5
       message = "Too low"      
     else
-      message = "bla"
+      message = "Hooray you guessed it, the number was #{num}"
     end
   end
   message
