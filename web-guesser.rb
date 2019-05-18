@@ -4,5 +4,5 @@ require 'sinatra/reloader' if development?
 num = rand(100)+1
 
 get '/' do
-  "Number is #{num}"
+  erb :index, :locals => {:num => num}
 end
