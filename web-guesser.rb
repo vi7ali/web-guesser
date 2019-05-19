@@ -16,7 +16,7 @@ def get_message(guess, num)
   unless guess.nil?
     case
     when guess > num && guess - num > 5
-      message = "Way too high"      
+      message = "Way too high"
     when guess > num && guess - num <= 5
       message = "Too high"      
     when guess < num && num - guess > 5
