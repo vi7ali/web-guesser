@@ -1,4 +1,4 @@
 # frozen_string_literal: true
 
-require './web-guesser'
+require './web_guesser'
 run Sinatra::Application
