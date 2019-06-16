@@ -25,7 +25,12 @@ too_low = lambda do |x|
   { msg: 'Too low', color: COLORS[:low] } if (x < NUM) && (NUM - x <= 5)
 end
 winner = lambda do |x|
-  { msg: "Congratulations, the number was #{NUM}", color: COLORS[:red] } if x == NUM
+  if x == NUM
+    result = { msg: "Congratulations, the number was #{x}, let's play another round",
+               color: COLORS[:red] }
+    NUM = rand(1..100)
+  end
+  result
 end
 CHECKS = [new_game, way_too_high, way_too_low, too_high, too_low, winner].freeze
 
